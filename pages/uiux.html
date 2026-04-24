@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIUX 作品 | Sunkaiqiang</title>
+    <meta name="description" content="Sunkaiqiang 的 UIUX 作品、界面系统与数字体验项目。" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="回到首页">
+        <span class="brand-symbol">SKQ</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="about.html">个人介绍</a>
+        <a href="academics.html">学术成果</a>
+        <a class="is-current" href="uiux.html">UIUX</a>
+        <a href="spatial.html">空间设计</a>
+        <a href="product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <div>
+            <p class="kicker reveal">UIUX Works</p>
+            <h1 class="page-title reveal">数字界面不只是屏幕，而是行为的舞台。</h1>
+          </div>
+          <p class="page-lead reveal">
+            这里展示界面系统、信息架构、交互原型和数字产品体验。每个项目卡片都可以点击进入完整详情页。
+          </p>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="project-grid">
+          <a class="project-card tilt-card reveal" href="../works/uiux/signal-dashboard.html">
+            <div class="project-visual visual-ui" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Signal Dashboard</h3>
+              <p>面向复杂数据监控场景的高密度仪表盘设计系统。</p>
+              <div class="project-meta">
+                <span>Dashboard</span>
+                <span>Design System</span>
+                <span>Motion</span>
+              </div>
+            </div>
+          </a>
+          <a class="project-card tilt-card reveal" href="../works/uiux/motion-commerce.html">
+            <div class="project-visual visual-ui" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Motion Commerce</h3>
+              <p>用交互动效和叙事节奏重构电商浏览与决策体验。</p>
+              <div class="project-meta">
+                <span>Mobile</span>
+                <span>Prototype</span>
+                <span>E-commerce</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

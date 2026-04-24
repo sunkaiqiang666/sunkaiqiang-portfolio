@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>空间设计作品 | Sunkaiqiang</title>
+    <meta name="description" content="Sunkaiqiang 的空间设计作品、展陈设计与沉浸式场景。" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="回到首页">
+        <span class="brand-symbol">SKQ</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="about.html">个人介绍</a>
+        <a href="academics.html">学术成果</a>
+        <a href="uiux.html">UIUX</a>
+        <a class="is-current" href="spatial.html">空间设计</a>
+        <a href="product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <div>
+            <p class="kicker reveal">Spatial Works</p>
+            <h1 class="page-title reveal">让动线、光、材质和信息在空间里共同叙事。</h1>
+          </div>
+          <p class="page-lead reveal">
+            空间设计作品页展示展陈、零售体验和沉浸式场景设计。项目详情页会拆解概念、动线、材料与体验节点。
+          </p>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="project-grid">
+          <a class="project-card tilt-card reveal" href="../works/spatial/urban-light-room.html">
+            <div class="project-visual visual-space" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Urban Light Room</h3>
+              <p>城市光感主题展陈空间，围绕路径、投影和反射材料组织体验。</p>
+              <div class="project-meta">
+                <span>Exhibition</span>
+                <span>Lighting</span>
+                <span>Wayfinding</span>
+              </div>
+            </div>
+          </a>
+          <a class="project-card tilt-card reveal" href="../works/spatial/future-retail-loop.html">
+            <div class="project-visual visual-space" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Future Retail Loop</h3>
+              <p>面向新消费品牌的循环式零售空间与交互陈列系统。</p>
+              <div class="project-meta">
+                <span>Retail</span>
+                <span>Experience</span>
+                <span>Display</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

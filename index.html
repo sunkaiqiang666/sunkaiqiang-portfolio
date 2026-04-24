@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunkaiqiang | Spatial Design System</title>
+    <meta
+      name="description"
+      content="Sunkaiqiang 的深色科技感个人设计主页，展示个人介绍、学术成果、UIUX、空间设计与产品设计作品。"
+    />
+    <meta property="og:title" content="Sunkaiqiang | Spatial Design System" />
+    <meta property="og:description" content="一个沉浸式、深色、科技感的个人设计作品系统。" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="回到首页">
+        <span class="brand-symbol">S</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="pages/about.html">个人介绍</a>
+        <a href="pages/academics.html">学术成果</a>
+        <a href="pages/uiux.html">UIUX</a>
+        <a href="pages/spatial.html">空间设计</a>
+        <a href="pages/product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="spatial-hero" aria-label="沉浸式首页">
+        <canvas id="depth-field" aria-hidden="true"></canvas>
+        <div class="hero-vignette" aria-hidden="true"></div>
+
+        <div class="hero-copy-block">
+          <p class="kicker reveal">Spatial Design System / 2026</p>
+          <h1 class="home-title reveal" data-scramble>Designing interfaces for the next layer of reality.</h1>
+          <p class="hero-copy reveal">
+            我将 UIUX、空间叙事、产品形态和设计研究组织成一个可探索的系统。移动光标，界面会像一块深色玻璃一样响应你的视线。
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button primary" href="#experience">探索作品系统</a>
+            <a class="button ghost" href="pages/about.html">进入个人介绍</a>
+          </div>
+        </div>
+
+        <aside class="orbital-system reveal" aria-label="作品入口">
+          <a class="orbit-card is-featured" href="pages/uiux.html" data-preview-target="uiux">
+            <span>01</span>
+            <strong>UIUX</strong>
+            <em>Interface systems</em>
+          </a>
+          <a class="orbit-card" href="pages/spatial.html" data-preview-target="spatial">
+            <span>02</span>
+            <strong>Space</strong>
+            <em>Immersive narrative</em>
+          </a>
+          <a class="orbit-card" href="pages/product.html" data-preview-target="product">
+            <span>03</span>
+            <strong>Product</strong>
+            <em>Material interaction</em>
+          </a>
+          <a class="orbit-card" href="pages/academics.html" data-preview-target="academic">
+            <span>04</span>
+            <strong>Research</strong>
+            <em>Design intelligence</em>
+          </a>
+        </aside>
+      </section>
+
+      <section class="experience-panel" id="experience">
+        <div class="section-head reveal">
+          <p class="kicker">Experience Architecture</p>
+          <h2>把作品集做成一套可以被感知的操作系统。</h2>
+        </div>
+        <div class="experience-grid">
+          <a class="glass-panel reveal tilt-card" href="pages/about.html">
+            <span>Profile</span>
+            <h3>个人介绍</h3>
+            <p>经历、方法、设计价值观与能力结构。</p>
+          </a>
+          <a class="glass-panel reveal tilt-card" href="pages/academics.html">
+            <span>Research</span>
+            <h3>学术成果</h3>
+            <p>论文、研究主题、展览与实验型项目。</p>
+          </a>
+          <a class="glass-panel reveal tilt-card" href="pages/uiux.html">
+            <span>Interface</span>
+            <h3>UIUX 作品</h3>
+            <p>界面系统、交互原型和数字产品体验。</p>
+          </a>
+          <a class="glass-panel reveal tilt-card" href="pages/spatial.html">
+            <span>Spatial</span>
+            <h3>空间设计作品</h3>
+            <p>展陈、零售空间、动线和沉浸叙事。</p>
+          </a>
+          <a class="glass-panel reveal tilt-card" href="pages/product.html">
+            <span>Object</span>
+            <h3>产品设计作品</h3>
+            <p>硬件概念、CMF、结构与触觉反馈。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="showcase-strip" aria-label="精选作品">
+        <div class="section-head reveal">
+          <p class="kicker">Selected Signals</p>
+          <h2>用少量强项目，建立清晰的专业信号。</h2>
+        </div>
+        <div class="showcase-track" data-drag-scroll>
+          <a class="showcase-card reveal" href="works/uiux/signal-dashboard.html">
+            <div class="showcase-visual visual-ui"></div>
+            <span>UIUX</span>
+            <strong>Signal Dashboard</strong>
+          </a>
+          <a class="showcase-card reveal" href="works/spatial/urban-light-room.html">
+            <div class="showcase-visual visual-space"></div>
+            <span>Spatial</span>
+            <strong>Urban Light Room</strong>
+          </a>
+          <a class="showcase-card reveal" href="works/product/orbit-controller.html">
+            <div class="showcase-visual visual-product"></div>
+            <span>Product</span>
+            <strong>Orbit Controller</strong>
+          </a>
+          <a class="showcase-card reveal" href="works/academic/human-ai-interface-study.html">
+            <div class="showcase-visual visual-academic"></div>
+            <span>Research</span>
+            <strong>Human-AI Study</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

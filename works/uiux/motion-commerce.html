@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Commerce | UIUX 作品</title>
+    <meta name="description" content="Motion Commerce UIUX 项目详情。" />
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="回到首页">
+        <span class="brand-symbol">SKQ</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="../../pages/about.html">个人介绍</a>
+        <a href="../../pages/academics.html">学术成果</a>
+        <a class="is-current" href="../../pages/uiux.html">UIUX</a>
+        <a href="../../pages/spatial.html">空间设计</a>
+        <a href="../../pages/product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero">
+        <div>
+          <a class="back-link" href="../../pages/uiux.html">返回 UIUX 作品</a>
+          <p class="kicker reveal">UIUX / Mobile Experience</p>
+          <h1 class="case-title reveal">Motion Commerce</h1>
+          <p class="case-lead reveal">
+            一个以动效为核心的移动购物体验概念，把商品浏览、参数比较、购买决策设计成连续的视觉节奏。
+          </p>
+          <div class="case-meta reveal">
+            <div><span>Role</span><strong>移动端体验 / 原型 / 动效规范</strong></div>
+            <div><span>Output</span><strong>User flow, motion map, product pages</strong></div>
+          </div>
+        </div>
+        <div class="case-media visual-ui reveal" aria-label="Motion Commerce 视觉预览"></div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-grid two">
+          <article class="case-panel reveal">
+            <h3>设计挑战</h3>
+            <p>传统电商页面容易把信息拆成静态模块，用户需要来回跳转才能形成判断。这个项目把比较、收藏、试用和结账放入连续行为里。</p>
+          </article>
+          <article class="case-panel reveal">
+            <h3>解决策略</h3>
+            <p>通过状态过渡、视差层级和手势反馈，让用户在浏览过程中持续理解商品差异，减少从兴趣到决策之间的断裂感。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>

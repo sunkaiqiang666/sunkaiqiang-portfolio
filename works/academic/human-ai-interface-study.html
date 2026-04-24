@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human-AI Interface Study | 学术成果</title>
+    <meta name="description" content="Human-AI Interface Study 学术成果详情。" />
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="回到首页">
+        <span class="brand-symbol">SKQ</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="../../pages/about.html">个人介绍</a>
+        <a class="is-current" href="../../pages/academics.html">学术成果</a>
+        <a href="../../pages/uiux.html">UIUX</a>
+        <a href="../../pages/spatial.html">空间设计</a>
+        <a href="../../pages/product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero">
+        <div>
+          <a class="back-link" href="../../pages/academics.html">返回学术成果</a>
+          <p class="kicker reveal">Academic / Human-AI</p>
+          <h1 class="case-title reveal">Human-AI Interface Study</h1>
+          <p class="case-lead reveal">
+            围绕 AI 工具辅助设计流程展开的界面研究，重点观察设计师如何在生成、筛选、修正和决策之间切换。
+          </p>
+          <div class="case-meta reveal">
+            <div><span>Type</span><strong>用户研究 / 原型实验</strong></div>
+            <div><span>Output</span><strong>Observation, interface prototype, findings</strong></div>
+          </div>
+        </div>
+        <div class="case-media visual-academic reveal" aria-label="Human-AI Interface Study 视觉预览"></div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-grid two">
+          <article class="case-panel reveal">
+            <h3>研究问题</h3>
+            <p>AI 工具如何影响设计师的注意力分配、选择标准和迭代节奏？界面应该如何降低“生成很多但难以判断”的负担？</p>
+          </article>
+          <article class="case-panel reveal">
+            <h3>研究产出</h3>
+            <p>提出一个带有历史轨迹、意图标注和版本对比的工作台原型，让 AI 辅助过程更容易被追踪和复盘。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>

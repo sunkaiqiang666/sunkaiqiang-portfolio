@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>产品设计作品 | Sunkaiqiang</title>
+    <meta name="description" content="Sunkaiqiang 的产品设计作品、硬件概念、CMF 与交互形态。" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="回到首页">
+        <span class="brand-symbol">SKQ</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="about.html">个人介绍</a>
+        <a href="academics.html">学术成果</a>
+        <a href="uiux.html">UIUX</a>
+        <a href="spatial.html">空间设计</a>
+        <a class="is-current" href="product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-inner">
+          <div>
+            <p class="kicker reveal">Product Works</p>
+            <h1 class="page-title reveal">从握持、结构、材料到数字反馈的完整产品体验。</h1>
+          </div>
+          <p class="page-lead reveal">
+            产品设计作品页用于呈现硬件概念、CMF、结构推演和人机交互。每个项目都可以进入详情页查看设计逻辑。
+          </p>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="project-grid">
+          <a class="project-card tilt-card reveal" href="../works/product/orbit-controller.html">
+            <div class="project-visual visual-product" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Orbit Controller</h3>
+              <p>面向创意工作流的模块化控制器，强调可触摸的参数调节体验。</p>
+              <div class="project-meta">
+                <span>Hardware</span>
+                <span>CMF</span>
+                <span>Interaction</span>
+              </div>
+            </div>
+          </a>
+          <a class="project-card tilt-card reveal" href="../works/product/luma-wearable.html">
+            <div class="project-visual visual-product" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Luma Wearable</h3>
+              <p>面向夜间通勤的轻量化可穿戴设备，结合光反馈和安全提示。</p>
+              <div class="project-meta">
+                <span>Wearable</span>
+                <span>Safety</span>
+                <span>Prototype</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

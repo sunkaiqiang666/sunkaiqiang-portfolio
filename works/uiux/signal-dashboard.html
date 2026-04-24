@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal Dashboard | UIUX 作品</title>
+    <meta name="description" content="Signal Dashboard UIUX 项目详情。" />
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="回到首页">
+        <span class="brand-symbol">SKQ</span>
+        <span>Sunkaiqiang</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="../../pages/about.html">个人介绍</a>
+        <a href="../../pages/academics.html">学术成果</a>
+        <a class="is-current" href="../../pages/uiux.html">UIUX</a>
+        <a href="../../pages/spatial.html">空间设计</a>
+        <a href="../../pages/product.html">产品设计</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="case-hero">
+        <div>
+          <a class="back-link" href="../../pages/uiux.html">返回 UIUX 作品</a>
+          <p class="kicker reveal">UIUX / Dashboard</p>
+          <h1 class="case-title reveal">Signal Dashboard</h1>
+          <p class="case-lead reveal">
+            一个面向复杂监控场景的高密度仪表盘系统，目标是在大量数据、异常状态和协作决策之间建立清晰的视觉秩序。
+          </p>
+          <div class="case-meta reveal">
+            <div><span>Role</span><strong>信息架构 / UI 系统 / 动效原型</strong></div>
+            <div><span>Output</span><strong>Design system, key screens, prototype</strong></div>
+          </div>
+        </div>
+        <div class="case-media visual-ui reveal" aria-label="Signal Dashboard 视觉预览"></div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-grid two">
+          <article class="case-panel reveal">
+            <h3>设计挑战</h3>
+            <p>不同角色需要在同一个界面里看到不同层级的信息：管理者看趋势，运营者看异常，执行者看任务。因此界面不能只是漂亮的数据图，而要支持快速判断。</p>
+          </article>
+          <article class="case-panel reveal">
+            <h3>解决策略</h3>
+            <p>用三层视觉密度组织信息：实时状态、风险信号、可执行任务。通过颜色、动效和卡片优先级，让复杂内容保持可扫描。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Sunkaiqiang</p>
+      <a href="mailto:hello@sunkaiqiang.com">hello@sunkaiqiang.com</a>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>
