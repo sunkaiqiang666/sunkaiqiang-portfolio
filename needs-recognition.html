@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaoyu要的图</title>
+    <meta
+      name="description"
+      content="将需求识别信息图重构为可切换图版与中英韩三语的交互网页。"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="needs-recognition.css" />
+  </head>
+  <body>
+    <main class="diagram-page">
+      <header class="topbar">
+        <div class="topbar__copy">
+          <p class="eyebrow" id="pageEyebrow"></p>
+          <h1 id="pageTitle"></h1>
+          <p class="page-intro" id="pageIntro"></p>
+        </div>
+        <div class="topbar__actions">
+          <span class="language-label" id="languageLabel"></span>
+          <div class="language-switch" role="group" aria-label="Language switch">
+            <button type="button" class="lang-button is-active" data-lang="zh">中文</button>
+            <button type="button" class="lang-button" data-lang="en">EN</button>
+            <button type="button" class="lang-button" data-lang="ko">한국어</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <aside class="control-panel">
+          <div class="panel-block">
+            <p class="panel-kicker" id="imageSelectLabel"></p>
+            <label class="field-label" for="presetSelect" id="imageSelectTitle"></label>
+            <select id="presetSelect" class="preset-select"></select>
+            <p class="field-hint" id="imageSelectHint"></p>
+          </div>
+
+          <div class="panel-block">
+            <p class="panel-kicker" id="presetSummaryLabel"></p>
+            <h2 class="panel-title" id="presetSummaryTitle"></h2>
+            <p class="panel-copy" id="presetDescription"></p>
+          </div>
+        </aside>
+
+        <section class="diagram-panel" aria-label="Requirement recognition diagram">
+          <div class="diagram-scroll">
+            <div class="diagram-board" id="diagramBoard"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="needs-recognition.js"></script>
+  </body>
+</html>
